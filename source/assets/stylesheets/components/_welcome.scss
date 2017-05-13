@@ -1,0 +1,49 @@
+.c-welcome {
+  animation-name: welcome;
+  animation-duration: .9s;
+  .doc {
+    margin: 3em 0;
+    font-family: $f-sans;
+    font-size: 1.1em;
+    font-weight: 300;
+
+    a {
+      border: 1px solid white;
+      border-radius: 3px;
+      padding: 0.75em 0.7em;
+      color: white;
+      text-decoration: none;
+      transition: color 0.1s linear;
+      &:hover {
+        background: rgba(0,0,0,0.2);
+        color: white;
+        transition: all 0.15s linear;
+      }
+    }
+  }
+  .logo {
+    img {
+      height: 18.75em;
+      margin-top: 6em;
+    }
+  }
+}
+
+@keyframes welcome {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+   transform: scale(0);
+   opacity: 0;
+  }
+  82.5% {
+    transform: scale(1.03);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  to {
+    transform: scale(1);
+  }
+}

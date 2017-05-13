@@ -1,0 +1,49 @@
+//
+// Responsive helpers
+//
+
+@mixin media($breakpoint) {
+  @media only screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+// Desktop
+.hide-on-desktop,
+.responsive-only,
+.tablet-only,
+.mobile-only {
+  display: none !important;
+}
+.desktop-only,
+.hide-on-responsive,
+.hide-on-tablet,
+.hide-on-mobile {
+  display: inherit;
+}
+
+// Tablet
+@media only screen and (max-width: $tablet) {
+  .responsive-only,
+  .tablet-only {
+    display: block !important;
+  }
+  .desktop-only,
+  .hide-on-responsive,
+  .hide-on-tablet {
+    display: none !important;
+  }
+}
+
+// Mobile
+@media only screen and (max-width: $mobile) {
+  .responsive-only,
+  .mobile-only {
+    display: block !important;
+  }
+  .desktop-only,
+  .hide-on-responsive,
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
