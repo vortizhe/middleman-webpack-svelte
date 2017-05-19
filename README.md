@@ -17,5 +17,5 @@ Simple boilerplate to start projects with modern frontend stack using external a
 ## Install
 
 ```
-$ middleman init -T vortizhe/middleman-webpack-svelte
+$ middleman init PROJECT_NAME -T vortizhe/middleman-webpack-svelte
 ```
